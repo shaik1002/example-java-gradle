@@ -17,8 +17,8 @@ dependencies {
 
 jacocoTestReport {
     reports {
-        xml.required true
-        html.required false
+        xml.enabled true
+        html.enabled false
     }
 }
 

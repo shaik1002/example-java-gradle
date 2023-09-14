@@ -4,21 +4,21 @@ version '1.0'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 
-sourceCompatibility = 20
-targetCompatibility = 20
+sourceCompatibility = 18
+targetCompatibility = 18
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation "junit:junit:4.13"
+    testImplementation "junit:junit:4.13.2"
 }
 
 jacocoTestReport {
     reports {
-        xml.required true
-        html.required false
+        xml.required = true
+        html.required = false
     }
 }
 

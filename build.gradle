@@ -12,13 +12,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation "junit:junit:4.13"
+    testImplementation "junit:junit:4.13.2"
 }
 
 jacocoTestReport {
     reports {
-        xml.enabled true
-        html.enabled false
+        xml.required = true
+        html.required = false
     }
 }
 

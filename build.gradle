@@ -4,8 +4,8 @@ version '1.0'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 
-sourceCompatibility = 18
-targetCompatibility = 18
+sourceCompatibility = 20
+targetCompatibility = 20
 
 repositories {
     mavenCentral()
@@ -17,8 +17,8 @@ dependencies {
 
 jacocoTestReport {
     reports {
-        xml.enabled true
-        html.enabled false
+        xml.required true
+        html.required false
     }
 }
 

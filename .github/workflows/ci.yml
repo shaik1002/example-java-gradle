@@ -14,6 +14,6 @@ jobs:
       - name: Install dependencies, run tests, and collect coverage
         run: gradle build
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4-beta
+        uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
